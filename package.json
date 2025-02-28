@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "lit": "^3.2.1",
+    "tailwindcss": "^4.0.9"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2",
+    "vite": "^6.2.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}

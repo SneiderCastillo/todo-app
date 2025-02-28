@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Lit</title>
+  <link rel="stylesheet" href="./src/index.css" />
+  <script type="module" src="/src/index.js"></script>
+</head>
+
+<body>
+  <header class="text-center p-5">
+    <h1 class="text-3xl font-bold">ToDo Project</h1>
+  </header>
+  <main class="flex flex-col gap-5 p-6">
+    <section class="flex border border-black rounded-lg">
+      <input type="text" placeholder="Write the task you want to add" class="grow px-2 h-10 focus-within:outline-0">
+      <button-element label="Add" class="bg-emerald-600 rounded-e-lg hover:bg-emerald-500"
+        svg="src/assets/add.svg"></button-element>
+    </section>
+    <section class="flex flex-col gap-2">
+      <h2>List of current tasks</h2>
+      <list-item></list-item>
+    </section>
+  </main>
+</body>
+
+</html>
