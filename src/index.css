@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .btn {
-  @apply flex items-center justify-center px-3 md:w-50 text-white font-bold h-10 hover:cursor-pointer select-none active:grayscale-15;
+  @apply flex items-center justify-center px-3 text-white font-bold h-10 hover:cursor-pointer select-none active:grayscale-15;
 }

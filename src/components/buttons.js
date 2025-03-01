@@ -9,12 +9,20 @@ export class Button extends LitElement {
     label: { type: String },
     class: { type: String },
     svg: { type: String },
+    width: { type: String },
   };
 
+  constructor() {
+    super();
+    this.width = "md:w-50";
+  }
+
   render() {
-    return html`<button class="btn ${this.class}">
+    return html`<button class="btn ${this.class} ${this.width}">
       ${this.svg ? html`<img src="${this.svg}" class="min-w-5" />` : ``}
-      <span class="hidden md:block mx-3">${this.label}</span>
+      ${this.label
+        ? html`<span class="hidden md:block mx-3">${this.label}</span>`
+        : ``}
     </button>`;
   }
 }

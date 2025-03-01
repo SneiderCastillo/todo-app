@@ -5,10 +5,26 @@ export class ListItem extends LitElement {
     return this;
   }
 
+  static properties = {
+    text: { type: String },
+  };
+
+  constructor() {
+    super();
+    this.text = "";
+  }
+
   render() {
     return html`<div class="flex bg-gray-200 rounded-lg">
+      <button-element
+        class="bg-violet-600 hover:bg-violet-500"
+        svg="src/assets/check.svg"
+        width=""
+        @click=${() => this.consoleLog("Done!")}
+      ></button-element>
       <input
         type="text"
+        value="${this.text}"
         placeholder="Write the task you want to add"
         class="grow px-2 h-10 focus-within:outline-0"
       />
